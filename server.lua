@@ -58,7 +58,7 @@ RegisterNetEvent("cycgps:server:connectGPS", function(_source)
 end)
 
 AddEventHandler("playerDropped", function(reason)
-    TriggerEvent("cycgps:client:dropGPS", source)
+    TriggerEvent("cycgps:server:dropGPS", source)
 end)
 
 RegisterNetEvent('cycgps:server:SetCallSign', function(callsign)
